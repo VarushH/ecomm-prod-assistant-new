@@ -30,3 +30,18 @@ spec:
             secretKeyRef:
               name: product-assistant-secrets
               key: GOOGLE_API_KEY
+        - name: ASTRA_DB_API_ENDPOINT
+          valueFrom:
+            secretKeyRef:
+              name: product-assistant-secrets
+              key: ASTRA_DB_API_ENDPOINT
+        - name: ASTRA_DB_APPLICATION_TOKEN
+          valueFrom:
+            secretKeyRef:
+              name: product-assistant-secrets
+              key: ASTRA_DB_APPLICATION_TOKEN
+        - name: ASTRA_DB_KEYSPACE
+          valueFrom:
+            secretKeyRef:
+              name: product-assistant-secrets
+              key: ASTRA_DB_KEYSPACE
